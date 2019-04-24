@@ -19,16 +19,16 @@ public class ParkingLot {
         }
     }
 
-    public void add(Car car)
+    public void add()
     {
 
             noofparkedcars++;
         }
-        public void reduce(Car car)
+        public void reduce()
 
         {
         noofparkedcars--;
-            System.out.println("Unparking");
+            System.out.println("Parking lot availiability");
             System.out.println(noofparkedcars);
 
         }
