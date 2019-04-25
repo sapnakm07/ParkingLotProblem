@@ -1,36 +1,44 @@
 public class ParkingLot {
 
     private int capacity;
-    private int noofparkedcars =0;
+    private int noOfParkedCars =0;
 
     public ParkingLot(int i) {
         this.capacity=i;
+
     }
 
     public boolean isFull() {
-        if(capacity==noofparkedcars){
-            System.out.println("parking is full");
+        if(capacity==noOfParkedCars)
+        {
+            //System.out.println(capacity);
+            //System.out.println("parking is full");
             return true;
         }
         else
         {
-            System.out.println("parking is not full");
+            //System.out.println("parking is not full");
             return false;
         }
     }
 
     public void add()
     {
+            noOfParkedCars++;
+            System.out.println("No of Vehicles parked");
+            System.out.println(noOfParkedCars);
+            //System.out.println(capacity-noOfParkedCars);
+    }
 
-            noofparkedcars++;
-        }
-        public void reduce()
+    public void reduce()
 
         {
-        noofparkedcars--;
-            System.out.println("Parking lot availiability");
-            System.out.println(noofparkedcars);
 
+            noOfParkedCars--;
+            //System.out.println(noOfParkedCars);
+            System.out.println("No of slots Remaining for parking");
+            System.out.println(capacity-noOfParkedCars);
         }
-    }
+
+}
 
