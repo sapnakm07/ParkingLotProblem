@@ -1,4 +1,4 @@
-public class Jeep implements Parkable {
+public class Jeep extends Vehicle {
 
 
     @Override

@@ -1,4 +1,4 @@
-public class Car implements Parkable {
+public class Car extends Vehicle {
 
     //String registrationNum;
     @Override
